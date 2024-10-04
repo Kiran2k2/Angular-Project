@@ -1,7 +1,6 @@
 .ag-theme-alpine .ag-row {
     margin-bottom: 10px; 
   }
-  /* Modal overlay and content styles */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -37,20 +36,17 @@
 
 
 
-  /* Custom Grid Styling */
 .custom-grid {
     --ag-header-background-color: #216c98; 
-    --ag-header-foreground-color: #ffffff; /* Custom header text color */
-    --ag-row-hover-color: rgba(33, 108, 152, 0.1); /* Row hover effect */
-    --ag-border-color: #ddd; /* Custom border color */
+    --ag-header-foreground-color: #ffffff;
+    --ag-border-color: #ddd;
   }
   
-  /* Row and Cell Padding */
   .ag-theme-alpine .ag-cell {
-    padding: 10px; /* Add padding to each cell */
+    padding: 100px; 
   }
   
-  /* Header Styling */
+  
   .ag-theme-alpine .ag-header-cell {
     font-weight: bold;
     font-size: 16px;
@@ -58,27 +54,23 @@
     padding: 10px;
   }
   
-  /* Header Border Radius */
+
   .ag-theme-alpine .ag-header {
     border-radius: 5px 5px 0 0;
   }
   
-  /* Alternating Row Background Color */
   .ag-theme-alpine .ag-row:nth-child(odd) {
     background-color: #f9f9f9;
   }
   
-  /* Add Spacing Between Rows */
   .ag-theme-alpine .ag-row {
-    margin-bottom: 10px; /* Add space between rows */
+    margin-bottom: 10px;
   }
   
-  /* Hover Effect on Rows */
   .ag-theme-alpine .ag-row:hover {
-    background-color: rgba(33, 108, 152, 0.05); /* Light blue hover */
+    background-color: rgba(33, 108, 152, 0.05); 
   }
   
-  /* Buttons Styling in Grid */
   .ag-theme-alpine .btn {
     padding: 5px 10px;
     font-size: 14px;
@@ -94,9 +86,8 @@
     color: white;
   }
   
-  /* Customize the Pagination Control */
   .ag-theme-alpine .ag-paging-panel {
-    background-color: #216c98; /* Custom pagination background */
+    background-color: #216c98;
     color: white;
   }
   
@@ -105,13 +96,11 @@
     color: #216c98;
   }
   
-  /* Pagination Button Hover */
   .ag-theme-alpine .ag-paging-panel button:hover {
     background-color: #216c98;
     color: white;
   }
   
-  /* Responsive Grid: Set a maximum width */
   @media (max-width: 768px) {
     .custom-grid {
       width: 100%;

@@ -103,24 +103,7 @@ export class ProductAgGridComponent implements OnInit {
   }
 
   
-  // onEditRow(product: Product) {
-  //   const newTitle = prompt('Enter new product name:', product.title);
-  //   const newPrice = prompt('Enter new product price:', product.price.toString());
-
-  //   if (newTitle !== null && newPrice !== null) {
-  //     product.title = newTitle;
-  //     product.price = parseFloat(newPrice);
-
-  //     this.apiProducts.updateProduct(product.id, product).subscribe({
-  //       next: (res) => {
-  //         this.gridApi.applyTransaction({ update: [res] }); 
-  //       },
-  //       error: (err) => {
-  //         console.log(err);
-  //       }
-  //     });
-  //   }
-  // }
+ 
  
 
   onEditRow(product: Product) {

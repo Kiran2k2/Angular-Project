@@ -1,9 +1,13 @@
 <div class="text-center my-3">
     <button class="btn btn-primary" (click)="openAddProductModal()">Add New Product</button>
 </div>
-<ag-grid-angular
+
+
+<div class="item" style="display: flex;  ">
+  <ag-grid-angular
+ 
   class="ag-theme-alpine custom-grid"
-  style="height: 500px; width: 100%;"
+  style="height: 400px; width: 100%; "
   [rowData]="productList"
   [pagination]="true"
   [paginationPageSize]="10"
@@ -12,6 +16,7 @@
   [defaultColDef]="defaultColDef"
 >
 </ag-grid-angular>
+</div>
   
 
 
