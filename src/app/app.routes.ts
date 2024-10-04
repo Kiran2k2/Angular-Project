@@ -64,7 +64,7 @@ canActivate:[authGuard]
  },
  
 {
-   path:'users-list',
+   path:'ag-grid',
    component:ProductAgGridComponent
 },
 {

@@ -43,9 +43,6 @@ addNewProduct(productData:any):Observable<any>{
 
 
 
-searrchProduct(query:string):Observable<any>{
-  return this.httpClient.get(`${this.searchProductUrl}?q=${query}`)
 
-}
 
 }
