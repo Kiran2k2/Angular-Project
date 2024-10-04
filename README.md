@@ -51,7 +51,7 @@ Steps
 Clone the repository:
  
  
-git clone https://github.com/your-username/angular-ecommerce-app.git
+https://github.com/Kiran2k2/Angular-Project.git
 cd angular-ecommerce-app
 Install dependencies:
  
