@@ -10,11 +10,11 @@
 
       <button class=" delete-btn" (click)="onDeleteCart(cart.id)">Delete</button>
 
-      <button (click)="toggleAddProductForm()" class="add-btn">
+      <!-- <button (click)="toggleAddProductForm()" class="add-btn">
 
         {{ showAddForm ? 'Close Add Product Form' : 'Add Product to Cart' }}
 
-      </button>
+      </button> -->
 
       
 
@@ -44,7 +44,7 @@
 
 
           
-          
+<!--           
 <div *ngIf="showAddForm" class="modal">
   <div class="modal-content">
     <span class="close" (click)="toggleAddProductForm()">&times;</span>
@@ -59,13 +59,13 @@
       <input [(ngModel)]="p.title" type="number" class="form-control" placeholder="Enter Title" />
       <label >Price:</label>
       <input [(ngModel)]="p.price" type="number" class="form-control" placeholder="Enter Quantity" />
-    </div>
+    </div> -->
 
-    <button (click)="onAddProductCart()" class="btn btn-success mt-3">Add Products</button>
+    <!-- <button (click)="onAddProductCart()" class="btn btn-success mt-3">Add Products</button> -->
   
-  </div>
-  <div class="overlay" (click)="toggleAddProductForm()"></div> 
-</div>
+  <!-- </div> -->
+  <!-- <div class="overlay" (click)="toggleAddProductForm()"></div>  -->
+<!-- </div> -->
            
 
       <div *ngIf="showUpdateBtn">
