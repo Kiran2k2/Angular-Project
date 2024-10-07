@@ -174,7 +174,7 @@
     }
 
     .container .card .imgBx {
-        height: 250px;
+        height: 200px;
     }
 
     .container .card .imgBx img {
@@ -188,6 +188,10 @@
     .container .card .content .price-rating h2 {
         font-size: 18px;
     }
+    .heading-part {
+        text-align: center;
+        margin-top: 330px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -199,7 +203,7 @@
     }
 
     .container .card .imgBx {
-        height: 200px;
+        height: 150px;
     }
 
     .container .card .imgBx img {
@@ -216,6 +220,10 @@
 
     .modal-content {
         width: 90%; /
+    }
+    .heading-part {
+        text-align: center;
+        margin-top: 400px;
     }
 }
 
@@ -238,5 +246,9 @@
 
     .container .card .content .price-rating h2 {
         font-size: 14px;
+    }
+    .heading-part {
+        text-align: center;
+        margin-top: 500px;
     }
 }

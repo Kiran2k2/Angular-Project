@@ -18,12 +18,10 @@ import { CommonModule } from '@angular/common';
 export class ProductAgGridComponent implements OnInit {
   productList: Product[] = [];
   gridApi:any
-  paginationPageSize: number = 10; 
+  paginationPageSize: number = 18; 
   isEditMode: boolean = true;
   isModalVisible: boolean = false;
   selectedProduct:any;
-
- 
 
   newProduct: any = {
     id: 0,
@@ -32,10 +30,6 @@ export class ProductAgGridComponent implements OnInit {
     description: '',
     thumbnail: ''
   };
-
-
-
-
 
   constructor(private apiProducts: ApiProductsService) {}
 
@@ -123,6 +117,8 @@ export class ProductAgGridComponent implements OnInit {
       }
       
     });
+
+   
   }
 
 

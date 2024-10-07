@@ -18,10 +18,6 @@ import { authGuard } from './auth.guard';
 import { PnfComponent } from './Components/pnf/pnf.component';
 import { SignupComponent } from './Components/signup/signup.component';
 
-
-
-
-
 export const routes: Routes = [{
     path:'',
     redirectTo:"login",
@@ -41,8 +37,7 @@ export const routes: Routes = [{
     path:'product/:id',component:ProductComponent
  },
  {
-   path:"productss/:category",
-   component:MenDataComponent
+   path:"productss/:category", component:MenDataComponent
  },
  {
    path:'cartList',component:CartComponent,
@@ -50,8 +45,7 @@ export const routes: Routes = [{
  },
 {
 
-path:'allCartList',
-component:AllCartProductsComponent,
+path:'allCartList',component:AllCartProductsComponent,
 canActivate:[authGuard]
 
  },
@@ -59,23 +53,19 @@ canActivate:[authGuard]
    path:"allCartList/:id", component:SingleCartComponent,
    canActivate:[authGuard] 
  },{
-   path:'access-user',
-   component:SingleUserComponent
+   path:'access-user',component:SingleUserComponent
  },
  
 {
-   path:'ag-grid',
-   component:ProductAgGridComponent
+   path:'ag-grid',component:ProductAgGridComponent
 },
 {
-   path:'user/:id',
-   component:SingleUserComponent
+   path:'user/:id',component:SingleUserComponent
 
 },
 
 {
-   path:'**',
-   component:PnfComponent  
+   path:'**',component:PnfComponent  
 }
 
 ];

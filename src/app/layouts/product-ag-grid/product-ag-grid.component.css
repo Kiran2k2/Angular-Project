@@ -29,14 +29,20 @@
   .btn {
     margin-top: 10px;
   }
-  
+  /* .item{
+    border: 2px solid green;
+   
+
+
+  } */
 
 
 
 
 
 
-.custom-grid {
+
+/* .custom-grid {
     --ag-header-background-color: #216c98; 
     --ag-header-foreground-color: #ffffff;
     --ag-border-color: #ddd;
@@ -116,4 +122,4 @@
       padding: 8px;
     }
   }
-  
+   */

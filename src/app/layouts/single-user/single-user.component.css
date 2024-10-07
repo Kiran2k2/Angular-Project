@@ -32,7 +32,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3333s ease;
     border: 2px solid rgb(228, 217, 228);
   }
   

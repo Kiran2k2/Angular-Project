@@ -1,9 +1,4 @@
-<!-- <div *ngFor="let data of cart">
-    <div>
-        <img src="{{{{data.image}}" alt="">
-    </div>
-    <div>{{data.price}}</div>
-</div> -->
+
 <ng-container ></ng-container>
     <div class="container" *ngIf="cart.length> 0">
         <div class="card-table">
@@ -44,7 +39,7 @@
                             <!-- <td><button class="btn btn-danger" (click)="emptyCart()">Empty Carts</button></td> -->
                             <td><button routerLink="/products" class="btn btn-primary">Shop more</button></td>
                             <td><button class="btn btn-success" routerLink="/products">Check out</button></td>
-                            <td><strong>Grand Total : ${{grandTotal }} </strong></td>
+                            <td><strong>Grand Total : {{grandTotal |currency:"INR" }} </strong></td>
                         </tr>
                     </tbody>
                 </table>

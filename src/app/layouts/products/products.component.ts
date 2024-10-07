@@ -99,8 +99,7 @@ export class ProductsComponent implements OnInit {
     this.newAddProduct = { ...product }; 
   }
 
-  updateProduct() {
-//   
+  updateProduct() {  
          
   this.productList=this.productList.map(product=>{
     if(product.id===this.newAddProduct.id){

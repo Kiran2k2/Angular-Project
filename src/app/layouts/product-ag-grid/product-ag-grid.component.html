@@ -3,24 +3,23 @@
 </div>
 
 
-<div class="item" style="display: flex;  ">
+<div class="item" >
+ <div class="total" >
   <ag-grid-angular
  
-  class="ag-theme-alpine custom-grid"
-  style="height: 400px; width: 100%; "
+  class="ag-theme-alpine ag-theme-quartz"
+  style="height: 600px; width: 100%;"
   [rowData]="productList"
   [pagination]="true"
-  [paginationPageSize]="10"
+  [paginationPageSize]="18"
   [columnDefs]="colDefs"
   (gridReady)="OnGridReady($event)"
   [defaultColDef]="defaultColDef"
 >
 </ag-grid-angular>
+ </div>
 </div>
   
-
-
-
 
   <div *ngIf="isModalVisible" class="modal-overlay">
     <div class="modal-content">
