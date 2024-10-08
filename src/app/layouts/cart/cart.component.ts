@@ -55,21 +55,6 @@ removeProduct(productId:number){
 }
 
 
-deleteApi(productId:number){
-  this.getCart.deleteCartItem(productId).subscribe(()=>{
-    this.removeProduct(productId)
-console.log(productId);
-
-  })
- 
-  
-}
-emptyCart(){
-
-  this.getCart.removeAllCart();
-  console.log("onclick")
-
-}
 
 
 }

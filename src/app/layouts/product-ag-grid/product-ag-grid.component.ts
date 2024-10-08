@@ -3,10 +3,8 @@ import { ApiProductsService } from '../../Services/api-products.service';
 import { Product } from '../../Model/products.model';
 import { ColDef } from 'ag-grid-community';
 import { AgGridAngular } from 'ag-grid-angular';
-import { FormsModule, NgForm } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
-
 
 @Component({
   standalone:true,
@@ -61,10 +59,6 @@ export class ProductAgGridComponent implements OnInit {
         `;
       },
       onCellClicked: (params: any) => this.onDeleteRow(params.data.id)
-
-
-
-
     }
   ];
 
@@ -77,8 +71,6 @@ export class ProductAgGridComponent implements OnInit {
   ngOnInit(): void {
     this.onGetProducts();
   }
-
-  
   onGetProducts() {
     this.apiProducts.getAllProduct().subscribe({
       next: (res) => {
@@ -95,11 +87,6 @@ export class ProductAgGridComponent implements OnInit {
       
     });
   }
-
-  
- 
- 
-
   onEditRow(product: Product) {
     this.selectedProduct= { ...product }; 
     this.isModalVisible = true; 
@@ -115,17 +102,8 @@ export class ProductAgGridComponent implements OnInit {
       error: (err) => {
         console.log(err);
       }
-      
     });
-
-   
   }
-
-
-
-
-
-
   closeModal() {
     this.isModalVisible = false;
   }
@@ -154,6 +132,4 @@ export class ProductAgGridComponent implements OnInit {
       }
     });
   }
-
-
 }

@@ -42,7 +42,7 @@ export class CartService {
     this.cartItems=[...this.cartItems]
     }
     else{
-      // let {}
+      
       let obj ={
        ...product,quantity:1
       }
@@ -97,12 +97,7 @@ increaseProductQuanty(item:any){
     item.id!== productId)
   console.log(this.cartItems);
  }
-  deleteCartItem(productId:number):Observable<any>{
-      
-    return this.httpService.delete(`https://fakestoreapi.com/products/${productId}`)
-
-
-  }
+ 
 
   removeAllCart(){
   //  this.cartItems=[];

@@ -37,8 +37,3 @@ export class HomeComponent {
 
 }
 
-// {
-//   id:2,
-//   img:"../../../assets/slide-03.jpg"
-// },
-

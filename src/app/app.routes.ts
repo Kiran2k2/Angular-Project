@@ -37,7 +37,8 @@ export const routes: Routes = [{
     path:'product/:id',component:ProductComponent
  },
  {
-   path:"productss/:category", component:MenDataComponent
+   path:"productss/:category", component:MenDataComponent,canActivate:[authGuard]
+
  },
  {
    path:'cartList',component:CartComponent,
