@@ -11,28 +11,10 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './catagories.component.html',
   styleUrl: './catagories.component.css'
 })
-export class CatagoriesComponent implements OnInit
- {
-  private route= inject(Router)
+export class CatagoriesComponent {
+  
 
-  catagoryProd:any[]=[]
-   constructor( private catagory:CatagoryService,
-    private httpC:HttpClient,
-    private act:ActivatedRoute
-
-   ){
-
-   }
-   ngOnInit(): void {
-
-     
-   }
- onViewCatagory(product:any){
-  // // this.route.navigate(['product',product.category])
-  // this.route.navigateByUrl("productss/:catagory")
-
- }
-
-
+   constructor(){}
+   
 
 }

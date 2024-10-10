@@ -1,5 +1,5 @@
 import { Product, ProductResponse } from './../../../Model/products.model';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { HeaderComponent } from "../../header/header.component";
 import { CatagoriesComponent } from '../catagories.component';
 import { CatagoryService } from '../../../Services/catagory.service';
@@ -20,11 +20,9 @@ import { ApiProductsService } from '../../../Services/api-products.service';
 export class MenDataComponent implements OnInit {
 
 
-// catagory:string | null=null
-
 product:any
+@Input({required:true}) category!:string
 
-// routee=inject(ActivatedRoute)
 constructor(private catService:CatagoryService, private route:ActivatedRoute,
 
   private cart:CartService,
@@ -72,6 +70,10 @@ addToCart(){
   this.cart.addToCart(this.product)
   console.log(this.product);
 }
+
+
+
+
 
 
 }

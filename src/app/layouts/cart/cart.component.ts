@@ -18,12 +18,7 @@ totalQuantity:number=0
 }
   ngOnInit(): void {
    this.cart= this.getCart.getCartItem()
-  //
-
-
-
-
-
+  
   this.getCart.getCartTotalPrice().subscribe(price => {
     this.grandTotal = price;
     console.log(this.grandTotal);
@@ -34,10 +29,8 @@ totalQuantity:number=0
     
     this.totalQuantity = quantity;
         // console.log(this.totalQuantity);
-
-  });
+});
 }
-
 
 inccreaseProdQuantity(item:any){
   this.getCart.increaseProductQuanty(item)
@@ -53,8 +46,5 @@ removeProduct(productId:number){
   this.cart=this.getCart.getCartItem()
   // console.log(this.cart);
 }
-
-
-
 
 }
